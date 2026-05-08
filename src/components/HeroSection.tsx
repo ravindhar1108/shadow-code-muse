@@ -1,4 +1,4 @@
-import { ArrowDown, FolderOpen, Mail } from "lucide-react";
+import { ArrowDown, FolderOpen, Mail, Download } from "lucide-react";
 
 const HeroSection = () => {
   return (
@@ -18,13 +18,13 @@ const HeroSection = () => {
         </h1>
 
         <p className="text-lg md:text-xl text-secondary-foreground mb-3 animate-fade-up-delay-2">
-          Computer Science & Business Systems Undergraduate
+          Aspiring Backend Developer
           <span className="mx-2 text-muted-foreground">|</span>
-          Software Developer
+          Java · Spring Boot · DSA
         </p>
 
         <p className="text-muted-foreground max-w-lg mx-auto mb-8 animate-fade-up-delay-3">
-          Passionate about building practical tech solutions and mastering DSA
+          Building secure, scalable backend systems and mastering DSA along the way.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-up-delay-4">
@@ -42,6 +42,14 @@ const HeroSection = () => {
           >
             <Mail size={16} />
             Contact Me
+          </a>
+          <a
+            href="/Ravindhar_G_Resume.pdf"
+            download
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-lg text-sm font-medium border border-border text-foreground bg-secondary hover:bg-muted transition-all duration-300 hover:scale-[1.02]"
+          >
+            <Download size={16} />
+            Resume
           </a>
         </div>
       </div>

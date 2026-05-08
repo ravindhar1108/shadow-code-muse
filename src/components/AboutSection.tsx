@@ -1,9 +1,9 @@
-import { Code2, Brain, Trophy } from "lucide-react";
+import { Code2, Brain, Server } from "lucide-react";
 
 const highlights = [
-  { icon: Code2, label: "900+ Problems Solved" },
+  { icon: Code2, label: "250+ LeetCode Problems" },
   { icon: Brain, label: "DSA Enthusiast" },
-  { icon: Trophy, label: "Frontend Developer" },
+  { icon: Server, label: "Learning Backend Dev" },
 ];
 
 const AboutSection = () => {
@@ -17,10 +17,12 @@ const AboutSection = () => {
           <p className="text-secondary-foreground leading-relaxed text-lg">
             Computer Science and Business Systems undergraduate with strong foundations in
             Data Structures & Algorithms and programming. Proficient in{" "}
-            <span className="text-foreground font-medium">C, C++, Java, and Python</span>.
-            Solved <span className="text-foreground font-medium">900+ coding problems</span> across
-            competitive programming platforms. Experienced in frontend development and passionate
-            about building real-world applications that solve meaningful problems.
+            <span className="text-foreground font-medium">Java, Python, and SQL</span>, and
+            currently focused on{" "}
+            <span className="text-foreground font-medium">backend development with Spring Boot</span>{" "}
+            — building secure REST APIs, authentication systems, and scalable services. Solved{" "}
+            <span className="text-foreground font-medium">250+ algorithmic problems</span> on
+            LeetCode and passionate about shipping real-world applications.
           </p>
         </div>
         <div className="flex flex-col gap-4">

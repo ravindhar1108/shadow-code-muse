@@ -1,25 +1,25 @@
-import { Code, Globe, Wrench, Users } from "lucide-react";
+import { Code, Globe, Wrench, Users, Server, Sparkles } from "lucide-react";
 
 const categories = [
   {
     icon: Code,
     title: "Languages",
-    skills: ["C", "C++", "Java", "Python", "SQL"],
+    skills: ["Java", "Python", "SQL"],
   },
   {
     icon: Globe,
-    title: "Web",
-    skills: ["React", "HTML", "CSS", "JavaScript", "Spring Boot"],
+    title: "Web Development",
+    skills: ["HTML", "CSS", "JavaScript", "Spring Boot"],
   },
   {
     icon: Wrench,
-    title: "Tools",
-    skills: ["VS Code", "GitHub", "Vercel", "Render", "Postman"],
+    title: "Tools & Platforms",
+    skills: ["Git", "GitHub", "IntelliJ IDEA", "VS Code", "Postman", "Linux"],
   },
   {
-    icon: Users,
-    title: "Soft Skills",
-    skills: ["Teamwork", "Communication", "Adaptability", "Quick Learning"],
+    icon: Server,
+    title: "Core CS",
+    skills: ["DSA", "OOP", "Computer Networks", "DBMS"],
   },
 ];
 
@@ -49,6 +49,29 @@ const SkillsSection = () => {
             </div>
           </div>
         ))}
+      </div>
+
+      {/* Currently learning */}
+      <div className="mt-10 glass-card-hover flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6">
+        <div className="flex items-center gap-3">
+          <div className="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center">
+            <Sparkles size={18} className="text-primary" />
+          </div>
+          <div>
+            <p className="text-xs font-mono uppercase tracking-widest text-primary">Currently Learning</p>
+            <h3 className="font-semibold text-foreground">Backend Development</h3>
+          </div>
+        </div>
+        <div className="flex flex-wrap gap-2 sm:ml-auto">
+          {["Spring Boot", "REST APIs", "PostgreSQL", "JWT Auth", "Docker", "AWS S3"].map((s) => (
+            <span
+              key={s}
+              className="text-xs font-mono px-2.5 py-1 rounded-md bg-muted text-secondary-foreground"
+            >
+              {s}
+            </span>
+          ))}
+        </div>
       </div>
     </section>
   );

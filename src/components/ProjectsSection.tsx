@@ -1,15 +1,21 @@
-import { FileText, Link2 } from "lucide-react";
+import { FileText, Link2, Shield, Github } from "lucide-react";
 
 const projects = [
   {
-    title: "PDF & Image Processing Desktop App",
-    tech: ["Python", "PySide6"],
-    description: "Offline PDF compression, conversion, and document tools with smart compression and background processing.",
+    icon: Shield,
+    title: "Secure File Sharing & Storage Vault",
+    tech: ["Spring Boot", "PostgreSQL", "AWS S3", "Docker", "Azure"],
+    description:
+      "Secure file management platform with JWT authentication, password-protected one-time share links, rate limiting, chunked uploads, and CI/CD via GitHub Actions.",
+    href: "https://github.com/ravindhar1108",
   },
   {
-    title: "ZOHO Cliq & YouTrack Integration",
-    tech: ["Deluge", "JavaScript"],
-    description: "Built CRUD operations, API integration, and notifications connecting ZOHO Cliq with YouTrack project management.",
+    icon: FileText,
+    title: "PDF & Image Processing Desktop App",
+    tech: ["Python"],
+    description:
+      "Desktop application for PDF and image processing — merge, split, compress, and convert with quality-preserving compression.",
+    href: "https://github.com/ravindhar1108",
   },
 ];
 
@@ -24,12 +30,19 @@ const ProjectsSection = () => {
           <div key={project.title} className="glass-card-hover group">
             <div className="flex items-start justify-between mb-4">
               <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
-                <FileText size={20} className="text-primary" />
+                <project.icon size={20} className="text-primary" />
               </div>
-              <Link2
-                size={16}
-                className="text-muted-foreground group-hover:text-primary transition-colors"
-              />
+              <a
+                href={project.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`${project.title} on GitHub`}
+              >
+                <Github
+                  size={16}
+                  className="text-muted-foreground group-hover:text-primary transition-colors"
+                />
+              </a>
             </div>
             <h3 className="font-semibold text-foreground mb-2 text-lg">{project.title}</h3>
             <p className="text-sm text-secondary-foreground mb-4 leading-relaxed">

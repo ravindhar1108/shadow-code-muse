@@ -3,21 +3,22 @@ import { Briefcase, GraduationCap } from "lucide-react";
 const experiences = [
   {
     icon: Briefcase,
-    title: "Infosys Springboard Internship 5.0",
-    subtitle: "AI Project Intern",
+    title: "Infosys Springboard Internship 6.0",
+    subtitle: "Java Developer Intern · Spring Boot, PostgreSQL",
     items: [
-      "Built voice-enabled form filler using React and CSS",
-      "Integrated AI voice-to-text APIs",
-      "Deployed using Vercel and Render",
+      "Built a backend system handling 100+ grievances for citizens and officers",
+      "Developed 10+ REST APIs with role-based access and JWT authentication",
+      "Collaborated in a 10-member agile team to build and deploy a prototype",
     ],
   },
   {
     icon: GraduationCap,
     title: "CS50x – Harvard (edX)",
-    subtitle: "Certificate Program",
+    subtitle: "Introduction to Computer Science",
     items: [
       "Learned algorithms, memory, recursion, and web technologies",
-      "Built task management web app as final project",
+      "Solved 10 problem sets using C, Python, and SQL",
+      "Built a task management web app as the final project",
     ],
   },
 ];
